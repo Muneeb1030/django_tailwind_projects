@@ -1,0 +1,1 @@
+To Clear Git cache `git rm -r -f --cached .`
