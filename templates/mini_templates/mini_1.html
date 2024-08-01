@@ -1,0 +1,28 @@
+{% extends "base/base_projects.html" %} 
+
+{% block title %}Mini 1{% endblock title%} 
+
+{% block content %}
+<div class="rounded-lg text-white p-2 bg-slate-800 mx-6">
+  <div class="flex flex-col rounded-l-xl md:flex-row">
+    <img
+      src="/static/images/email_sub.jpg"
+      alt=""
+      class="object-fill rounded-lg h-80 md:h-64 md:rounded-l-lg md:rounded-r-none transform hover:scale-105 duration-200"
+    />
+
+    <div class='p-6 md:p-12'>
+      <h2 class='font-serif font-bold text-xl text-center'>Get diet and fitness tips in your inbox</h2>
+      <p class='text-center md:text-left my-6 max-w-sm leading-5 tracking-wide'>
+        Eat better and excercise better. Sign up for the Diet and Fitness newsletter.
+      </p>
+
+     <div class='flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4'>
+         <input type="text" name="email" id="email" placeholder="Enter your Email" class='rounded-md bg-slate-800 text-white placeholder:text-slate-300 text-center border border-slate-600 focus:outline-none focus:ring-0 md:text-left'>
+      <button class='bg-lime-500 p-1 py-2 rounded-md hover:bg-lime-700 duration-500 text-slate-800 font-bold hover:text-white hover:shadow-md hover:shadow-slate-600 md:px-4'>Subscribe</button>
+     </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
