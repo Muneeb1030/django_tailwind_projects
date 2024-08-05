@@ -1,20 +1,30 @@
 {% extends "base/base.html" %}
 
-{% block title %}Home{% endblock title %}
+{% block title %}Home{% endblock title %} 
+
 
 {% block content %}
-    <div class="flex flex-col items-center justify-center h-screen">
-        <h1 class="text-white text-xl font-bold mb-4">MINI PROJECT PORTFOLIO</h1>
-        <div class='p-6 space-x-5 flex flex-row items-center justify-center'>
-            <a href="{% url 'mini_1' %}" class="hover:text-white bg-lime-500 hover:bg-lime-700 duration-500 text-slate-800 p-2 rounded-md max-w-sm">Mini 1</a>
-            <a href="{% url 'mini_1' %}" class="hover:text-white bg-lime-500 hover:bg-lime-700 duration-500 text-slate-800 p-2 rounded-md">Mini 2</a>
-            <a href="{% url 'mini_1' %}" class="hover:text-white bg-lime-500 hover:bg-lime-700 duration-500 text-slate-800 p-2 rounded-md">Mini 3</a>      
-        </div>
-        <div class='space-x-5 flex flex-row items-center justify-center'>
-            <a href="{% url 'mini_1' %}" class="hover:text-white bg-lime-500 hover:bg-lime-700 duration-500 text-slate-800 p-2 rounded-md">Mini 4</a>
-            <a href="{% url 'mini_1' %}" class="hover:text-white bg-lime-500 hover:bg-lime-700 duration-500 text-slate-800 p-2 rounded-md">Mini 5</a>
-            <a href="{% url 'mini_1' %}" class="hover:text-white bg-lime-500 hover:bg-lime-700 duration-500 text-slate-800 p-2 rounded-md">Mini 6</a>
-            
-        </div>
+<div class="flex flex-col items-center h-screen">
+  <h1 class="text-lime-800 text-7xl font-bold text-center mb-4">MINI PROJECT PORTFOLIO</h1>
+
+    {% comment %} {% for i in '01'|make_list %}  {% endcomment %}
+    {% comment %}
+    <p>This is iteration number {{ forloop.counter }}</p>
+    {% endcomment %} 
+    {% comment %} <div class="pt-3 space-x-4 flex flex-row items-center">
+        {% for i in '01'|make_list %}
+        <a href="{% url 'mini_1' %}"
+        class="hover:text-white bg-lime-500 hover:bg-lime-700 duration-500 text-slate-800 p-2 rounded-md"
+        >Mini 1</a>
+        {% endfor %}
     </div>
+    {% endfor %} {% endcomment %}
+    <div class = 'grid grid-cols-3 grid-rows-2 gap-2'>
+        <a href= {% url "mini_1" %} class="text-center col-span-2 p-10 font-bold uppercase bg-gradient-to-br from-[#0081A7] to-[#00AFB9] text-white rounded-md hover:shadow-lg hover:scale-105 transition duration-500">Email Subcriber Card</a>
+        <a class="row-span-2 p-10 font-bold uppercase bg-gradient-to-br from-[#00AFB9] to-[#FED9B7] text-white text-pretty rounded-md hover:shadow-lg hover:scale-105 transition duration-500 flex items-center">Pricing Grids</a>
+        <a class="text-center col-span-2 p-10 font-bold uppercase bg-gradient-to-br from-[#FED9B7] to-[#F07167] text-white rounded-md hover:shadow-lg hover:scale-105 transition duration-500">Product Modals</a>
+        <a class="text-center p-10 font-bold uppercase bg-gradient-to-tr from-[#4C1A57] to-[#00A8AA]  text-white rounded-md hover:shadow-lg hover:scale-105 transition duration-500">Image Gallery</a>
+        <a href= {% url "mini_1" %} class="text-center col-span-2 p-10 font-bold uppercase bg-gradient-to-tr from-[#00A8AA] to-[#F0F600] text-white rounded-md hover:shadow-lg hover:scale-105 transition duration-500">login Modal</a>
+    </div>
+</div>
 {% endblock content %}
