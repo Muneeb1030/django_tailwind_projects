@@ -3,7 +3,18 @@
 {% block title %}Home{% endblock title %}
 
 {% block content %}
-    <div class="flex flex-col item-center justify-center h-screen">
-        <h1 class="text-white text-xl">Helllo World</h1>
+    <div class="flex flex-col items-center justify-center h-screen">
+        <h1 class="text-white text-xl font-bold mb-4">MINI PROJECT PORTFOLIO</h1>
+        <div class='p-6 space-x-5 flex flex-row items-center justify-center'>
+            <a href="{% url 'mini_1' %}" class="hover:text-white bg-lime-500 hover:bg-lime-700 duration-500 text-slate-800 p-2 rounded-md max-w-sm">Mini 1</a>
+            <a href="{% url 'mini_1' %}" class="hover:text-white bg-lime-500 hover:bg-lime-700 duration-500 text-slate-800 p-2 rounded-md">Mini 2</a>
+            <a href="{% url 'mini_1' %}" class="hover:text-white bg-lime-500 hover:bg-lime-700 duration-500 text-slate-800 p-2 rounded-md">Mini 3</a>      
+        </div>
+        <div class='space-x-5 flex flex-row items-center justify-center'>
+            <a href="{% url 'mini_1' %}" class="hover:text-white bg-lime-500 hover:bg-lime-700 duration-500 text-slate-800 p-2 rounded-md">Mini 4</a>
+            <a href="{% url 'mini_1' %}" class="hover:text-white bg-lime-500 hover:bg-lime-700 duration-500 text-slate-800 p-2 rounded-md">Mini 5</a>
+            <a href="{% url 'mini_1' %}" class="hover:text-white bg-lime-500 hover:bg-lime-700 duration-500 text-slate-800 p-2 rounded-md">Mini 6</a>
+            
+        </div>
     </div>
 {% endblock content %}
