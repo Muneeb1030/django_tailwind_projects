@@ -7,3 +7,15 @@ def home(request):
 
 def mini_1(request):
     return render(request=request, template_name='mini_templates/mini_1.html')
+
+def mini_2(request):
+    return render(request=request, template_name='mini_templates/mini_2.html')
+
+def mini_3(request):
+    return render(request=request, template_name='mini_templates/mini_3.html')
+
+def mini_4(request):
+    return render(request=request, template_name='mini_templates/mini_4.html')
+
+def mini_5(request):
+    return render(request=request, template_name='mini_templates/mini_5.html')
