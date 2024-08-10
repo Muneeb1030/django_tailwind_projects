@@ -3,24 +3,28 @@
 {% block title %}Product Modals{% endblock title %}
 
 {% block content %}
-<div class = 'flex md:flex-row flex-col bg-neutral-100 max-w-screen-sm items-center rounded-md p-6'>
-    
-    <img src="/static/images/headphone.png" alt="" class='object-fill w-64 h-64 rounded-md p-2'>
+<div class = 'flex md:flex-row flex-col bg-white shadow-lg items-center rounded-md p-6'>
+    <div class='md:mx-4 my-4'>
+        <img src="/static/images/headphone.png" alt="" class='w-64 rounded-lg hover:scale-105 hover:shadow-lg transition duration-150 mx-auto'>
+    </div>
     <div class="flex flex-col mx-3">
         <p class='py-1 bg-neutral-900 text-white text-center text-xs rounded-full max-w-24'>Free Shipping</p>
-        <p class='text-2xl font-semibold'>Razer Kraken Kitty Edt Gaming Headset Quartz</p>
-        <p class='mt-8 text-sm line-through font-semibold'>$700</p>
-        <p class='pt-1 text-2xl font-bold'>$599</p>
+        <p class='text-3xl font-semibold mt-6 max-w-sm'>Razer Kraken Kitty Edt Gaming Headset Quartz</p>
+        <p class='mt-6 text-lg line-through font-semibold'>$700</p>
+        <p class='pt-1 text-4xl font-bold'>$599</p>
         <p class='text-xs font-light'>The offer is valid until April 3 or as long as stock lasts!</p>
-        <button class='bg-blue-500 text-white px-3 py-2 rounded-md my-4 text-lg font-semibold shadow-b-2xl shashadow-blue-950 hover:scale-105 hover:shadow-md hover:shadow-gray-400 transition duration-200'>Buy Now!</button>
-        <p class='text-sm'>50+ pcs in stock</p>
-        <div class='flex flex-col md:flex-row flex-grow justify-center md:space-x-6 space-y-4 md:space-y-0 md:m-4 m-8'>
-            <button class='outline outline-gray-500 rounded-md flex flex-row justify-center items-center p-1 hover:scale-105 transition duration-200 '>
+        <button class='bg-blue-500 text-white px-6 py-3 rounded-md my-4 text-2xl font-semibold shadow-b-2xl hover:shadow-md hover:shadow-gray-400 transition duration-200 border-b-8 border-b-blue-700 hover:border-t-8 hover:border-t-blue-700 hover:border-b-0 hover:-translate-x-1'>Buy Now!</button>
+        <div class='flex items-center space-x-2 group'>
+            <div class='bg-green-500 rounded-full w-4 h-4 group-hover:animate-ping'></div>
+            <p class='text-sm'><span class='font-bold'>50+</span> pcs in stock</p>
+        </div>
+        <div class='flex flex-col md:flex-row justify-center md:space-x-4 md:space-y-0 space-x-0 space-y-3 mt-3'>
+            <button class='border-gray-500 border-2 rounded-lg flex flex-row items-center justify-center px-4 py-2 hover:-translate-y-1 hover:shadow-lg hover:scale-105 transition duration-200'>
                 <img src="/static/images/weight.png" alt="" class='w-8 md:w-6 m-1'>
                 <span class='md:text-sm font-bold mr-1'>Add to Cart</span>
             </button>
-            <button class='outline outline-gray-500 rounded-md flex flex-row items-center justify-center p-1 hover:scale-105 transition duration-200'>
-                <img src="/static/images/heart.png" alt="" class='w-8 md:w-6 m-1'>
+            <button class='border-gray-500 border-2 rounded-lg flex flex-row items-center justify-center px-4 py-2 hover:-translate-y-1 hover:shadow-lg hover:scale-105 transition duration-200'>
+                <img src="/static/images/heart.png" alt="" class='w-10 md:w-8 m-1'>
                 <span class='md:text-sm font-bold mr-1'>Add to wishlist</span>
             </button>
 
