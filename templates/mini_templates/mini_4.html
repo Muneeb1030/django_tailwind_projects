@@ -1,58 +1,88 @@
-{% extends "base/base_projects.html" %}
-
-{% block title %}Image Gallery{% endblock title %}
+{% extends "base/base_projects.html" %} 
+{% block title %}Image Gallery{%endblock title %}
 
 {% block content %}
-<div class = 'rounded-2xl shadow-xl p-10 md:p-40'>
-    <div class='flex flex-col items-center justify-center md:flex-row md:justify-end md:space-x-4 space-x-0 md:space-y-0 space-y-4 mb-4'>
-        <div class='flex flex-col items-center  group space-y-1'>
-            <a href="#" class='font-bold text-black'>Vectors</a>
-            <div class='border-b-4 h-2 w-8 bg-black opacity-0 group-hover:opacity-100 transition duration-200 '></div>
-        </div>
-        <div class='flex flex-col items-center group space-y-1'>
-            <a href="#" class='font-bold text-black'>Illustrations</a>
-            <div class='border-b-4 h-2 w-8 bg-black opacity-0 group-hover:opacity-100 transition duration-200 '></div>
-        </div>
-        <div class='flex flex-col items-center  group space-y-1'>
-            <a href="#" class='font-bold text-black'>Images</a>
-            <div class='border-b-4 h-2 w-8 bg-black opacity-0 group-hover:opacity-100 transition duration-200 '></div>
-        </div>
-        <div class='flex flex-col items-center group space-y-1'>
-            <a href="#" class='font-bold text-black'>Icons</a>
-            <div class='border-b-4 h-2 w-8 bg-black opacity-0 group-hover:opacity-100 transition duration-200 '></div>
-        </div>
+<div class="rounded-2xl shadow-xl p-10 md:p-36">
+  <div
+    class="flex flex-col items-center justify-center md:flex-row md:justify-end md:space-x-4 space-x-0 md:space-y-0 space-y-4 mb-4"
+  >
+    <div class="flex flex-col items-center group space-y-1">
+      <a href="#" class="font-bold text-black">Vectors</a>
+      <div
+        class="border-b-4 h-2 w-8 bg-black opacity-0 group-hover:opacity-100 transition duration-200"
+      ></div>
     </div>
-    <div
-        class="flex flex-col justify-between space-y-5 md:flex-row md:space-y-0">
-          <div class="flex justify-between rounded-lg bg-white">
-            <input
-              type="text"
-              class="border-none rounded-lg md:w-80 placeholder:font-thin focus:outline-none"
-              placeholder="Search"
-            />
-            <button>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-8 text-gray-300 duration-200 hover:scale-110"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <circle cx="10" cy="10" r="7" />
-                <line x1="21" y1="21" x2="15" y2="15" />
-              </svg>
-            </button>
-          </div>
-          <button
-            class="py-3 px-14 text-lg font-normal text-white bg-black border border-black rounded-md shadow-2xl duration-200 hover:bg-white hover:text-black"
-          >
-            Upload
-          </button>
-          
+    <div class="flex flex-col items-center group space-y-1">
+      <a href="#" class="font-bold text-black">Illustrations</a>
+      <div
+        class="border-b-4 h-2 w-8 bg-black opacity-0 group-hover:opacity-100 transition duration-200"
+      ></div>
+    </div>
+    <div class="flex flex-col items-center group space-y-1">
+      <a href="#" class="font-bold text-black">Images</a>
+      <div
+        class="border-b-4 h-2 w-8 bg-black opacity-0 group-hover:opacity-100 transition duration-200"
+      ></div>
+    </div>
+    <div class="flex flex-col items-center group space-y-1">
+      <a href="#" class="font-bold text-black">Icons</a>
+      <div
+        class="border-b-4 h-2 w-8 bg-black opacity-0 group-hover:opacity-100 transition duration-200"
+      ></div>
+    </div>
+  </div>
+  <div class="flex flex-col justify-between space-y-5 md:flex-row md:space-y-0 mb-4 md:space-x-5">
+    <div class="flex justify-between rounded-lg bg-white">
+      <input
+        type="text"
+        class="border-none rounded-lg md:w-80 placeholder:font-thin focus:outline-none"
+        placeholder="Search"
+      />
+      <button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-8 text-gray-300 duration-200 hover:scale-110"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </button>
+    </div>
+    <button
+      class="py-2 px-10 text-lg font-normal text-white bg-black border border-black rounded-md shadow-2xl duration-200 hover:bg-white hover:text-black"
+    >
+      Upload
+    </button>
+  </div>
+  <div class="grid md:grid-cols-3 gap-2">
+    {% for i in 0123456|make_list %}
+    <div class="relative group cursor-pointer">
+      <img
+        src="/static/images/image{{i}}.jpg"
+        alt=""
+        class="rounded-lg group-hover:-translate-y-1 group-hover:shadow-lg transition duration-150 w-64"
+      />
+      <div
+        class="flex justify-between absolute bottom-0 right-0 left-0 bg-black bg-opacity-35 text-white p-2 rounded-t-lg opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 group-hover:shadow-lg transition duration-150"
+      >
+        <div class="flex flex-col text-sm leading-3 tracking-tighter">
+          <span class="font-semibold uppercase">Headphones</span>
+          <span class="text-xs">Likes 500k+</span>
         </div>
+        <div class="flex items-center">
+          <img src="/static/images/bookmark.svg" alt="bookmark" />
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    
+  </div>
 </div>
 {% endblock content %}
