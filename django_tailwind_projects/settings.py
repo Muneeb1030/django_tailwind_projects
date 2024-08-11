@@ -1,5 +1,7 @@
 from pathlib import Path
 from decouple import config
+from shutil import which
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config("SECRET_KEY", cast=str)
@@ -29,7 +31,7 @@ TAILWIND_APP_NAME = 'theme'
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
-NPM_BIN_PATH = r"C:\Users\M Muneeb\AppData\Roaming\npm\npm.cmd"
+NPM_BIN_PATH = which("npm")
 
 
 MIDDLEWARE = [
