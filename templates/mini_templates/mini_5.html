@@ -3,5 +3,25 @@
 {% block title %}Login Modal{% endblock title %}
 
 {% block content %}
-<h1>Mini 5</h1>
+<div class='bg-white shadow-lg rounded-2xl flex md:flex-row'>
+    <div class='p-8 md:p-12 flex flex-col max-w-md'>
+        <h1 class="font-montserrat font-extrabold text-2xl">Log In</h1>
+        <p>Log in to your account to upload or download pictures, videos or music.</p>
+        <input type="text">
+        <div class='flex flex-row'>
+            <a href="">Forgot password?</a>
+            <button>Next</button>
+        </div>
+        <div></div>
+        <p>Or Log in with</p>
+        <div class='flex flex-row'>
+            <button>Google</button>
+            <button>Facebook</button>
+        </div>
+    </div>
+    <div>
+        <img src="/static/images/image.jpg" alt=""
+        class='rounded-r-2xl w-[430px] md:block hidden'>
+    </div>
+</div>
 {% endblock content %}
