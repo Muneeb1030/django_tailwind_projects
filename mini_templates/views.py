@@ -19,3 +19,21 @@ def mini_4(request):
 
 def mini_5(request):
     return render(request=request, template_name='mini_templates/mini_5.html')
+
+def project_1(request):
+    return render(request=request, template_name='projects/project_1.html')
+
+def project_2(request):
+    return render(request=request, template_name='projects/project_2.html')
+
+def project_3(request):
+    return render(request=request, template_name='projects/project_3.html')
+
+def project_4(request):
+    return render(request=request, template_name='projects/project_4.html')
+
+def project_5(request):
+    return render(request=request, template_name='projects/project_5.html')
+
+def project_6(request):
+    return render(request=request, template_name='projects/project_6.html')
