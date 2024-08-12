@@ -753,9 +753,9 @@ select {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 480px) {
   .container {
-    max-width: 640px;
+    max-width: 480px;
   }
 }
 
@@ -765,21 +765,15 @@ select {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 976px) {
   .container {
-    max-width: 1024px;
+    max-width: 976px;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
+    max-width: 1440px;
   }
 }
 
@@ -1380,6 +1374,10 @@ select {
   padding: 2rem;
 }
 
+.p-40 {
+  padding: 10rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1425,6 +1423,10 @@ select {
 
 .text-center {
   text-align: center;
+}
+
+.font-baijamjuree {
+  font-family: Bai Jamjuree, sans-serif;
 }
 
 .font-montserrat {
@@ -1560,6 +1562,11 @@ select {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-grayishBlue {
+  --tw-text-opacity: 1;
+  color: hsl(201 11% 66% / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1921,7 +1928,7 @@ select {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 976px) {
   .lg\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
