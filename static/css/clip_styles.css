@@ -1,0 +1,11 @@
+body{
+    background-image: url(../projects/project_1/bg-header-desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+    body{
+        background-image: url(../projects/project_1/bg-header-mobile.png);
+    }
+}

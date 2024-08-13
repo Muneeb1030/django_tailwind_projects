@@ -857,6 +857,11 @@ select {
   margin-right: auto;
 }
 
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -878,6 +883,14 @@ select {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .ml-1 {
@@ -1006,6 +1019,10 @@ select {
 
 .max-w-2xl {
   max-width: 42rem;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
 }
 
 .max-w-md {
@@ -1247,6 +1264,11 @@ select {
   background-color: rgb(34 197 94 / var(--tw-bg-opacity));
 }
 
+.bg-lightBlue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(233 100% 69% / var(--tw-bg-opacity));
+}
+
 .bg-lime-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(132 204 22 / var(--tw-bg-opacity));
@@ -1280,6 +1302,11 @@ select {
 .bg-slate-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
+.bg-strongCyan {
+  --tw-bg-opacity: 1;
+  background-color: hsl(171 66% 44% / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -1374,10 +1401,6 @@ select {
   padding: 2rem;
 }
 
-.p-40 {
-  padding: 10rem;
-}
-
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1391,6 +1414,11 @@ select {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-1 {
@@ -1549,6 +1577,11 @@ select {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+.text-grayishBlue {
+  --tw-text-opacity: 1;
+  color: hsl(201 11% 66% / var(--tw-text-opacity));
+}
+
 .text-lime-800 {
   --tw-text-opacity: 1;
   color: rgb(63 98 18 / var(--tw-text-opacity));
@@ -1562,11 +1595,6 @@ select {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-grayishBlue {
-  --tw-text-opacity: 1;
-  color: hsl(201 11% 66% / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1625,6 +1653,23 @@ select {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-header {
+  margin-bottom: 1.5rem;
+  font-family: Bai Jamjuree, sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: hsl(210 10% 33% / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .section-header {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 .placeholder\:font-thin::-moz-placeholder {
@@ -1965,3 +2010,4 @@ select {
     line-height: 1;
   }
 }
+

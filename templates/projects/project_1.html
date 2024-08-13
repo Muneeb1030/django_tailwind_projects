@@ -1,9 +1,31 @@
 {% extends "base/base.html" %}
-
 {% block title %}Clip Board{% endblock title %}
-
 {% block content %}
-<section id='Hero' class='font-baijamjuree text-center text-xl text-grayishBlue'>
-<div>Hello</div>
+<section id="Hero" class="max-w-6xl mx-auto text-center mb-40 p-10">
+  <img src="/static/projects/project_1/logo.svg" alt="" class="mx-auto my-16" />
+
+  <h1 class = 'section-header'>
+    A history of everything you copy
+  </h1>
+  <p class="text-grayishBlue font-baijamjuree mb-8">
+    Clipboard allows you to track and organize everything you copy. <br />
+    Instantly access your clipboard on all your devices.
+  </p>
+  <div
+    class="flex md:flex-row flex-col items-center justify-center space-y-4 space-x-0 md:space-x-4 md:space-y-0"
+  >
+    <a
+      href="#"
+      class="bg-strongCyan text-white font-baijamjuree font-bold py-3 px-8 rounded-full"
+      >Download for Mac</a
+    >
+
+    <a
+      href="#"
+      class="bg-lightBlue text-white font-baijamjuree font-bold py-3 px-8 rounded-full"
+      >Download for Mac</a
+    >
+  </div>
 </section>
+
 {% endblock content %}
