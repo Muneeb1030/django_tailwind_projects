@@ -15,5 +15,5 @@
 }
 
 .clip-section-container{
-    @apply max-w-6xl mx-auto text-centerp-10
+    @apply max-w-6xl mx-auto text-center p-10
 }
