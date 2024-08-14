@@ -2,7 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.section-header {
+.clip-section-header {
     @apply font-baijamjuree font-bold text-4xl md:text-5xl mb-6 text-darkGrayishBlue
 }
 
+.clip-section-subheader {
+    @apply font-baijamjuree font-bold text-2xl md:text-3xl mb-2 text-darkGrayishBlue
+}
+
+.clip-p-text {
+    @apply text-grayishBlue font-baijamjuree mb-8
+}
+
+.clip-section-container{
+    @apply max-w-6xl mx-auto text-center md:mb-20 p-10
+}

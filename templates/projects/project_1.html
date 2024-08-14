@@ -1,13 +1,10 @@
-{% extends "base/base.html" %}
-{% block title %}Clip Board{% endblock title %}
+{% extends "base/base.html" %} {% block title %}Clip Board{% endblock title %}
 {% block content %}
-<section id="Hero" class="max-w-6xl mx-auto text-center mb-40 p-10">
+<section id="Hero" class="clip-section-container">
   <img src="/static/projects/project_1/logo.svg" alt="" class="mx-auto my-16" />
 
-  <h1 class = 'section-header'>
-    A history of everything you copy
-  </h1>
-  <p class="text-grayishBlue font-baijamjuree mb-8">
+  <h1 class="clip-section-header">A history of everything you copy</h1>
+  <p class="clip-p-text">
     Clipboard allows you to track and organize everything you copy. <br />
     Instantly access your clipboard on all your devices.
   </p>
@@ -16,15 +13,60 @@
   >
     <a
       href="#"
-      class="bg-strongCyan text-white font-baijamjuree font-bold py-3 px-8 rounded-full"
+      class="bg-strongCyan text-white font-baijamjuree font-bold py-3 px-8 rounded-full duration-200 transition hover:-translate-y-1 hover:shadow-lg hover:opacity-90"
       >Download for Mac</a
     >
 
     <a
       href="#"
-      class="bg-lightBlue text-white font-baijamjuree font-bold py-3 px-8 rounded-full"
-      >Download for Mac</a
+      class="bg-lightBlue text-white font-baijamjuree font-bold py-3 px-8 rounded-full duration-200 transition hover:-translate-y-1 hover:shadow-lg hover:opacity-90"
+      >Download for iOS</a
     >
+  </div>
+</section>
+
+<section id="snippets" class="clip-section-container">
+  <h1 class="clip-section-header">Keep track of your snippets</h1>
+  <p class="clip-p-text">
+    Clipboard instantly stores any item you copy in the cloud, meaning you can
+    access your snippets immediately on all your devices. Our Mac and iOS apps
+    will help you organize everything.
+  </p>
+</section>
+
+<section id="features" class="clip-section-container">
+  <div
+    class="flex flex-col md:flex-row relative items-center justify-center md:space-x-32"
+  >
+    <div class="md:w-1/2">
+    <img
+      src="/static/projects/project_1/image-computer.png"
+      alt=""
+      class="md:absolute top-0 right-[50%]"
+    />
+    </div>
+    
+    <div class='flex flex-col md:text-start lg:mt-16 md:mt-12 mt-10 md:ml-24 md:pl-24'>
+      <div> 
+        <p class="clip-section-subheader">Quick Search</p>
+        <p class="clip-p-text">
+          Easily search your snippets by content, category, web address,
+          application, and more
+        </p>
+      </div>
+      <div>
+        <p class="clip-section-subheader">iCloud Sync</p>
+        <p class="clip-p-text">
+          Instantly saves and syncs anippets accross all your devices.
+        </p>
+      </div>
+      <div>
+        <p class="clip-section-subheader">Complete History</p>
+        <p class="clip-p-text">
+          Retrieve any snippets from the first moment you started using the app.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
