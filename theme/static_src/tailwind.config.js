@@ -21,6 +21,8 @@ module.exports = {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
         baijamjuree: ["Bai Jamjuree", "sans-serif"],
+        josefin: ["Josefin Sans", "sans-serif"],
+        alata: ["Alata"],
       },
     },
   },

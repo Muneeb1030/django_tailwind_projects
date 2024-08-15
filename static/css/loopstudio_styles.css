@@ -1,0 +1,12 @@
+.loop-background{
+    background-image: url(../projects/project_2/desktop/image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 480px) {
+    .loop-background{
+        background-image: url(../projects/project_2/mobile/image-hero.jpg);
+        background-position: center;
+    }
+}

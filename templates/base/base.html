@@ -4,12 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>{% block title %}{% endblock title %}</title>
+    {% comment %} Project 1: Font {% endcomment %}
     <link
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    {% comment %} project 2: Fonts {% endcomment %}
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="{% static 'css/clip_styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/loopstudio_styles.css' %}">
     {% tailwind_css %}
 </head>
 <body>
