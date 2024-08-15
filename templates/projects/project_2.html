@@ -1,61 +1,110 @@
-{% extends "base/base.html" %}
-{% block title %}Loop Studio{% endblock title %}
+{% extends "base/base.html" %} {% block title %}Loop Studio{% endblock title %}
 {% block content %}
 <section id="Hero" class="loop-background mx-auto px-10 py-5">
   <div class="flex justify-between">
     <img src="/static/projects/project_2/logo.svg" alt="" />
 
-    <div class='md:flex space-x-5 hidden'>
+    <div class="md:flex space-x-5 hidden">
       <div class="group">
         <a class="text-white text-lg font-alata"> About </a>
-        <div
-          class="group-hover:border-b group-hover:border-b-white mx-2"
-        ></div>
+        <div class="group-hover:border-b group-hover:border-b-white mx-2"></div>
       </div>
       <div class="group">
         <a class="text-white text-lg font-alata"> Careers </a>
-        <div
-          class="group-hover:border-b group-hover:border-b-white mx-2"
-        ></div>
+        <div class="group-hover:border-b group-hover:border-b-white mx-2"></div>
       </div>
       <div class="group">
         <a class="text-white text-lg font-alata"> Events </a>
-        <div
-          class="group-hover:border-b group-hover:border-b-white mx-2"
-        ></div>
+        <div class="group-hover:border-b group-hover:border-b-white mx-2"></div>
       </div>
       <div class="group">
         <a class="text-white text-lg font-alata"> Products </a>
-        <div
-          class="group-hover:border-b group-hover:border-b-white mx-2"
-        ></div>
+        <div class="group-hover:border-b group-hover:border-b-white mx-2"></div>
       </div>
       <div class="group">
         <a class="text-white text-lg font-alata"> Support </a>
-        <div
-          class="group-hover:border-b group-hover:border-b-white mx-2"
-        ></div>
+        <div class="group-hover:border-b group-hover:border-b-white mx-2"></div>
       </div>
     </div>
   </div>
-  <div class='text-white uppercase font-josefin md:text-4xl text-3xl max-w-sm border-2 p-10 md:my-44 lg:text-5xl lg:max-w-md my-32'>
+  <div
+    class="text-white uppercase font-josefin md:text-4xl text-3xl max-w-sm border-2 p-10 md:my-44 lg:text-5xl lg:max-w-md my-32"
+  >
     Impressive Experience that dliver
   </div>
 </section>
 
-<section id='features'>
-    <div class='relative my-32 px-10 md:px-0 max-w-6xl mx-auto flex flex-col justify-center items-center md:justify-normal md:flex-row space-y-10 md:space-y-0'>
-        <img src="/static/projects/project_2/desktop/image-interactive.jpg" alt="" class='rounded-lg'>
-        <div class='top-48 md:absolute md:right-0 md:py-20 md:pl-20 bg-white text-black font-josefin text-center md:text-left md:rounded-lg max-w-lg'>
-            <h1 class='uppercase font-bold text-4xl'>
-                The leader in interactive VR
-            </h1>
-            <p class='text-xl'>
-                Founded in 2011, Loopstudios has been producing world-class virtual reality projects 'Ot some Of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.
-            </p>
-
-        </div>
+<section id="features">
+  <div
+    class="relative my-32 px-10 md:px-0 max-w-6xl mx-auto flex flex-col justify-center items-center md:justify-normal md:flex-row space-y-10 md:space-y-0"
+  >
+    <img
+      src="/static/projects/project_2/desktop/image-interactive.jpg"
+      alt=""
+      class="rounded-lg"
+    />
+    <div
+      class="top-48 md:absolute md:right-0 md:py-20 md:pl-20 bg-white text-black font-josefin text-center md:text-left md:rounded-lg max-w-lg"
+    >
+      <h1 class="uppercase font-bold text-4xl">The leader in interactive VR</h1>
+      <p class="text-xl">
+        Founded in 2011, Loopstudios has been producing world-class virtual
+        reality projects 'Ot some Of the best companies around the globe. Our
+        award-winning creations have transformed businesses through digital
+        experiences that bind to their brand.
+      </p>
     </div>
-
+  </div>
 </section>
+<section></section>
+<footer id="footer" class='bg-black mx-auto px-10 py-16'>
+  <div class="flex flex-col md:flex-row  items-center justify-between md:space-y-0 space-y-6">
+    <div>
+      <img src="/static/projects/project_2/logo.svg" alt="" class='w-40'/>
+      <div class="flex flex-col md:flex-row md:space-x-5 pt-6 md:space-y-0 space-y-1 items-center">
+        <div class="group">
+          <a class="text-white md:text-lg font-alata"> About </a>
+          <div
+            class="group-hover:border-b group-hover:border-b-white mx-2"
+          ></div>
+        </div>
+        <div class="group">
+          <a class="text-white md:text-lg font-alata"> Careers </a>
+          <div
+            class="group-hover:border-b group-hover:border-b-white mx-2"
+          ></div>
+        </div>
+        <div class="group">
+          <a class="text-white md:text-lg font-alata"> Events </a>
+          <div
+            class="group-hover:border-b group-hover:border-b-white mx-2"
+          ></div>
+        </div>
+        <div class="group">
+          <a class="text-white md:text-lg font-alata"> Products </a>
+          <div
+            class="group-hover:border-b group-hover:border-b-white mx-2"
+          ></div>
+        </div>
+        <div class="group">
+          <a class="text-white md:text-lg font-alata"> Support </a>
+          <div
+            class="group-hover:border-b group-hover:border-b-white mx-2"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="flex flex-row space-x-5 space-y-1 items-center justify-center">
+        <img src="/static/projects/project_2/icon-facebook.svg" alt="" class='hover:-translate-y-1 hover:scale-105 hover:shadow-md hover:shadow-gray-600 transition duration-150'>
+        <img src="/static/projects/project_2/icon-instagram.svg" alt="" class='hover:-translate-y-1 hover:scale-105 hover:shadow-md hover:shadow-gray-600 transition duration-150'>
+        <img src="/static/projects/project_2/icon-pinterest.svg" alt="" class='hover:-translate-y-1 hover:scale-105 hover:shadow-md hover:shadow-gray-600 transition duration-150'>
+        <img src="/static/projects/project_2/icon-twitter.svg" alt="" class='hover:-translate-y-1 hover:scale-105 hover:shadow-md hover:shadow-gray-600 transition duration-150'>
+      </div>
+      <p class='text-white pt-4 font-josefin'>
+        &copy; 2022 Loopstudios. All Rights Reserved
+      </p>
+    </div>
+  </div>
+</footer>
 {% endblock content %}
