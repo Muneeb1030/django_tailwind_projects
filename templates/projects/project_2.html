@@ -1,7 +1,7 @@
 {% extends "base/base.html" %} {% block title %}Loop Studio{% endblock title %}
 {% block content %}
 <section id="Hero" class="loop-background mx-auto px-10 py-5">
-  <div class="flex justify-between">
+  <nav class="flex justify-between items-center">
     <img src="/static/projects/project_2/logo.svg" alt="" />
 
     <div class="md:flex space-x-5 hidden">
@@ -26,6 +26,24 @@
         <div class="group-hover:border-b group-hover:border-b-white mx-2"></div>
       </div>
     </div>
+    <div class="md:hidden">
+      <button id="menu-btn" class='z-40 open block md:hidden humberger'>
+          <span class="humberger-top"></span>
+          <span class="humberger-middle"></span>
+          <span class="humberger-bottom"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div
+    id="menu"
+    class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black"
+  >
+    <a href="#" class="hover:text-pink-500 font-alata">About</a>
+    <a href="#" class="hover:text-pink-500 font-alata">Careers</a>
+    <a href="#" class="hover:text-pink-500 font-alata">Events</a>
+    <a href="#" class="hover:text-pink-500 font-alata">Products</a>
+    <a href="#" class="hover:text-pink-500 font-alata">Support</a>
   </div>
   <div
     class="text-white uppercase font-josefin md:text-4xl text-3xl max-w-sm border-2 p-10 md:my-44 lg:text-5xl lg:max-w-md my-32"

@@ -10,3 +10,46 @@
         background-position: center;
     }
 }
+
+.humberger{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.humberger-top,
+.humberger-middle,
+.humberger-bottom{
+    background: #fff;
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;
+    transform: rotate(0);
+}
+
+.humberger-middle{
+    transform: translateY(7px);
+}
+.humberger-bottom{
+    transform: translateY(14px);
+}
+
+.open{
+    transform: rotate(90deg);
+}
+
+.open .humberger-middle{
+    display: none;
+}
+
+.open .humberger-top{
+    transform:rotate(45deg) translateY(6px) translateX(6px);
+}
+.open .humberger-bottom{
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
