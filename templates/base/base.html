@@ -1,4 +1,5 @@
 {% load static tailwind_tags %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,10 +21,10 @@
     <link rel="stylesheet" href="{% static 'css/clip_styles.css' %}">
     <link rel="stylesheet" href="{% static 'css/loopstudio_styles.css' %}">
     {% tailwind_css %}
-</head>
-<body>
-    {% block content %}
-    
-    {% endblock content %}
+  </head>
+  <body>
+    {% block content %}{% endblock content %}
+
+    {% block javascript %}{% endblock javascript %}
 </body>
 </html>

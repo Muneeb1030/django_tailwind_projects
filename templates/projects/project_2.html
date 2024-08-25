@@ -1,4 +1,12 @@
-{% extends "base/base.html" %} {% block title %}Loop Studio{% endblock title %}
+{% extends "base/base.html" %}
+{% load static %}
+{% block title %}Loop Studio{% endblock title %}
+{% block javascript %}
+<script src="{% static 'js/loopstudio.js' %}"></script>
+<script>  
+  console.log("Hello from Django template!");
+</script>
+{% endblock javascript %}
 {% block content %}
 <section id="Hero" class="loop-background mx-auto px-10 py-5">
   <nav class="flex justify-between items-center">
@@ -27,7 +35,7 @@
       </div>
     </div>
     <div class="md:hidden">
-      <button id="menu-btn" class='z-40 open block md:hidden humberger'>
+      <button id="menu-btn" type="button" class='z-40 block md:hidden humberger'>
           <span class="humberger-top"></span>
           <span class="humberger-middle"></span>
           <span class="humberger-bottom"></span>
@@ -37,7 +45,7 @@
 
   <div
     id="menu"
-    class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black"
+    class="absolute top-0 bottom-0 left-0 hidden flex-col w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black"
   >
     <a href="#" class="hover:text-pink-500 font-alata">About</a>
     <a href="#" class="hover:text-pink-500 font-alata">Careers</a>
@@ -78,7 +86,7 @@
   id="items-section"
   class="mb-10 px-10 lg:px-10 xl:px-0 max-w-6xl mx-auto"
 >
-  <div class="mb-10">
+  <div class="mb-10 md:pt-20">
     <div class="flex flex-row md:justify-between justify-center">
       <h1 class="font-josefin font-bold text-4xl uppercase">Our Creation</h1>
       <a
@@ -90,7 +98,7 @@
   </div>
   <div>
     <div
-      class="flex flex-col md:flex-row md:space-x-8 space-y-5 space-x-0 md:space-y-0"
+      class="flex flex-col md:flex-row md:space-x-8 space-x-0 md:mb-5 md:space-y-0 space-y-5"
     >
       <div class="relative group overflow-hidden md:w-1/4">
         <img
@@ -175,7 +183,7 @@
       
     </div>
     <div
-      class="flex flex-col md:flex-row md:space-x-8 space-y-5 space-x-0 md:space-y-0 mb-10"
+      class="flex flex-col md:flex-row md:space-x-8 space-x-0 md:space-y-0 space-y-5 mt-5 md:mt-0 mb-10"
     >
       <div class="relative group overflow-hidden md:w-1/4">
         <img
@@ -184,7 +192,7 @@
           class="md:block hidden w-full group-hover:scale-110 transition duration-150"
         />
         <img
-          src="/static/projects/project_2/mobile/image-from-avove.jpg"
+          src="/static/projects/project_2/mobile/image-from-above.jpg"
           alt=""
           class="md:hidden block w-full group-hover:scale-110 transition duration-150"
         />
@@ -194,7 +202,7 @@
         <h5
           class="absolute bottom-5 left-5 w-52 text-white uppercase font-josefin md:text-3xl text-2xl group-hover:text-gray-900 transition duration-200 group-hover:scale-105"
         >
-          From up Above VR
+          From Up Above VR
         </h5>
       </div>
       <div class="relative group overflow-hidden md:w-1/4">
@@ -257,9 +265,7 @@
           Make it fisheye
         </h5>
       </div>
-      
     </div>
-
   </div>
   <a
     class="md:hidden flex items-center justify-center font-bold uppercase text-black border-2 border-black font-alata tracking-widest px-10 py-3 hover:-translate-y-1 hover:shadow-md duration-150 transition hover:scale-105 hover:text-white hover:bg-black"
