@@ -34,6 +34,3 @@ def project_4(request):
 
 def project_5(request):
     return render(request=request, template_name='projects/project_5.html')
-
-def project_6(request):
-    return render(request=request, template_name='projects/project_6.html')

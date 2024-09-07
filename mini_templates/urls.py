@@ -12,5 +12,4 @@ urlpatterns = [
     path('project_3', mini_view.project_3, name="project_3"),
     path('project_4', mini_view.project_4, name="project_4"),
     path('project_5', mini_view.project_5, name="project_5"),
-    path('project_6', mini_view.project_6, name="project_6"),
 ]
