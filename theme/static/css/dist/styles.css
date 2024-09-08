@@ -983,6 +983,14 @@ select {
   margin-top: 2rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
+}
+
 .line-clamp-5 {
   overflow: hidden;
   display: -webkit-box;
@@ -1044,6 +1052,10 @@ select {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-24 {
+  height: 6rem;
 }
 
 .min-h-screen {
@@ -1126,6 +1138,10 @@ select {
   max-width: 24rem;
 }
 
+.max-w-6 {
+  max-width: 1.5rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1180,6 +1196,10 @@ select {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .gap-2 {
@@ -1260,6 +1280,12 @@ select {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-24 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(6rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(6rem * var(--tw-space-y-reverse));
 }
 
 .overflow-auto {
@@ -1661,6 +1687,11 @@ select {
   padding-bottom: 1.25rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pb-52 {
   padding-bottom: 13rem;
 }
@@ -1683,6 +1714,18 @@ select {
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
 }
 
 .text-center {
@@ -2250,6 +2293,16 @@ select {
   background-color: hsl(217 28% 15% / var(--tw-bg-opacity));
 }
 
+.dark\:bg-darkBlue2:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: hsl(216 53% 9% / var(--tw-bg-opacity));
+}
+
+.dark\:bg-darkBlue1:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: hsl(218 28% 13% / var(--tw-bg-opacity));
+}
+
 .dark\:bg-logo-dark-mode:is(.dark *) {
   background-image: url('/static/projects/project_5/images/logo-dark-mode.svg');
 }
@@ -2489,6 +2542,12 @@ select {
     --tw-space-y-reverse: 0;
     margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-x-20 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(5rem * var(--tw-space-x-reverse));
+    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:rounded-lg {
