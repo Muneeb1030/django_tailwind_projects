@@ -1,7 +1,7 @@
 {% load static tailwind_tags %} 
 {% load static %}
 <!DOCTYPE html>
-<html lang="en" class=''>
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,21 +14,23 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    
+
     {% tailwind_css %}
   </head>
-  <body class='dark:bg-darkBlue dark:text-white font-opensans'>
-    <div class='container mx-auto px-6 mt-10 text-center h-40 md:h-20'>
-        <div class='bg-logo-light-mode dark:bg-logo-dark-mode h-20 w-48 bg-no-repeat md:absolute top-10 left-10 mx-auto md:mx-0'>
-        </div>
-        <div class='flex flex-row md:absolute top-12 right-10 justify-center items-center space-x-4 md:space-x-8'>
-            <a href="">Features</a>
-            <a href="">Testimonial</a>
-            <button
+  <body class="dark:bg-darkBlue dark:text-white font-opensans">
+    <header class="container mx-auto px-6 mt-10 text-center h-40 md:h-20">
+      <div
+        class="bg-logo-light-mode dark:bg-logo-dark-mode h-20 w-48 bg-no-repeat md:absolute top-10 left-10 mx-auto md:mx-0"
+      ></div>
+      <div
+        class="flex flex-row md:absolute top-12 right-10 justify-center items-center space-x-4 md:space-x-8"
+      >
+        <a href="">Features</a>
+        <a href="">Testimonial</a>
+        <button
           id="theme-toggle"
           class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 5"
         >
-          <!-- Dark SVG Icon -->
           <svg
             id="theme-toggle-dark-icon"
             class="w-5 h-5 hidden"
@@ -40,7 +42,6 @@
               d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
             ></path>
           </svg>
-          <!-- Light SVG Icon -->
           <svg
             id="theme-toggle-light-icon"
             class="w-5 h-5 hidden"
@@ -55,20 +56,36 @@
             ></path>
           </svg>
         </button>
+      </div>
+    </header>
+
+    <section id='hero' class='bg-curvy-light-mode dark:bg-curvy-dark-mode bg-no-repeat bg-contain bg-bottom'>
+        <div class='mx-auto px-6 text-center pb-52 md:pt-20'>
+            <img src="/static/projects/project_5/images/illustration-intro.png" alt="" class="mx-auto">
+            <h1 class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-tight mt-14 md:text-4xl">
+                All your files in one secure location, assessible anywhere.
+            </h1>
+            <p class="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg">
+                Fylo stores all your most important files in one secure location.
+                Access them wherever you need. share and collaborate with friends family, and co-workers.
+            </p>
+            <button class="p-3 rounded-full w-52 bg-accentCyan hover:scale-95">
+                Get Started
+            </button>
         </div>
-    </div>
+    </section>
   </body>
-  
+
   <script>
-      if (
-        localStorage.getItem('color-theme') === 'dark' ||
-        (!('color-theme' in localStorage) &&
-          window.matchMedia('(prefers-color-scheme: dark)').matches)
-      ) {
-        document.documentElement.classList.add('dark')
-      } else {
-        document.documentElement.classList.remove('dark')
-      }
-    </script>
-    <script src="/static/js/flyo.js" defer></script>
+    if (
+      localStorage.getItem("color-theme") === "dark" ||
+      (!("color-theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  </script>
+  <script src="/static/js/flyo.js" defer></script>
 </html>
