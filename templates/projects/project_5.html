@@ -151,7 +151,8 @@
     </section>
     <section id="productivity" class="bg-gray-50 dark:bg-darkBlue1">
       <div
-        class="container flex flex-col lg:flex-row mx-auto space-y-20 md:space-y-0 space-x-0 md:space-x-24 max-w-6xl items-center pb-32">
+        class="container flex flex-col lg:flex-row mx-auto space-y-20 md:space-y-0 space-x-0 md:space-x-24 max-w-6xl items-center pb-32"
+      >
         <img
           src="/static/projects/project_5/images/illustration-stay-productive.png"
           alt=""
@@ -257,16 +258,46 @@
         </div>
       </div>
     </section>
-    <section></section>
-    <footer class="bg-gray-200 dark:bg-darkBlue2">
-      <div class="flex flex-col space-y-5 py-20 px-20 items-center md:items-start ">
-        <img
-          src="/static/projects/project_5/images/logo-dark-mode.svg"
-          alt=""
-          class="w-32 pb-10"
-        />
-        <div class="flex flex-col md:flex-row space-y-10 md:space-y-0 justify-between items-center md:items-start text-center md:text-left">
-          <div class="flex flex-row space-x-2">
+     <section id="early-access" class="relative px-6 dark:bg-darkBlue2 bg-gray-400 md:px-0">
+      <div
+        class="relative -top-24 max-w-4xl mx-auto p-10 px-6 space-y-6 text-center rounded-lg  dark:bg-darkBlue bg-gray-200 md:px-16"
+      >
+        <h5 class="text-2xl font-bold">Get early access today</h5>
+        <p class="text-sm">
+          It only takes a minute to sign up and our free starter tier is
+          extremely generous. If you have any questions, our support team would
+          be happy to help you.
+        </p>
+        <!-- Input & Button Container -->
+        <div
+          class="flex flex-col items-start space-y-6 md:flex-row md:space-y-0 md:space-x-6"
+        >
+          <div class="w-full md:flex-1">
+            <input
+              type="text"
+              class="w-full px-10 py-3 rounded-full focus:outline-none"
+              placeholder="email@example.com"
+            />
+          </div>
+
+          <button
+            class="w-full p-3 px-6 rounded-full bg-accentCyan md:w-56 hover:scale-95"
+          >
+            Get Started For Free
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-400 dark:bg-darkBlue2">
+      <div
+        class="flex flex-col space-y-5 pb-20 px-20 items-center md:items-start "
+      >
+        <div class='bg-logo-light-mode dark:bg-logo-dark-mode h-20 w-48 bg-no-repeat'></div>
+        <div
+          class="flex flex-col lg:flex-row space-y-10 lg:space-y-0 w-full items-center lg:items-start text-center lg:text-left lg:justify-between"
+        >
+          <div class="flex flex-row space-x-2 items-center">
             <div class="w-6">
               <img
                 src="/static/projects/project_5/images/icon-location.svg"
@@ -274,9 +305,9 @@
                 class="scale-125"
               />
             </div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <div class='max-w-xs'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
           </div>
-          <div class='flex flex-col space-y-5'>
+          <div class="flex flex-col items-center  lg:items-start space-y-5">
             <div class="flex flex-row space-x-2">
               <div class="w-6">
                 <img
@@ -298,21 +329,33 @@
               <div>example@gmail.com</div>
             </div>
           </div>
-          <div class='flex flex-col space-y-5'>
-            <p class='text-lg'>About Us</p>
-            <p class='text-lg'>Jobs</p>
-            <p class='text-lg'>Press</p>
-            <p class='text-lg'>Blogs</p>
+          <div class="flex flex-col space-y-5">
+            <p class="text-lg">About Us</p>
+            <p class="text-lg">Jobs</p>
+            <p class="text-lg">Press</p>
+            <p class="text-lg">Blogs</p>
           </div>
-          <div class='flex flex-col space-y-5'>
-            <p class='text-lg'>Contact Us</p>
-            <p class='text-lg'>Privacy</p>
-            <p class='text-lg'>Terms</p>
+          <div class="flex flex-col space-y-5">
+            <p class="text-lg">Contact Us</p>
+            <p class="text-lg">Privacy</p>
+            <p class="text-lg">Terms</p>
           </div>
-          <div class='flex flex-row space-x-2 items-start'>
-            <img src="/static/projects/project_5/images/facebook.svg" alt="" class='rounded-full border-white border-2 p-2'>
-            <img src="/static/projects/project_5/images/twitter.svg" alt="" class='rounded-full border-white border-2 p-2'>
-            <img src="/static/projects/project_5/images/instagram.svg" alt="" class='rounded-full border-white border-2 p-2'>
+          <div class="flex flex-row space-x-2 items-start">
+            <img
+              src="/static/projects/project_5/images/facebook.svg"
+              alt=""
+              class="rounded-full border-white border-2 p-2"
+            />
+            <img
+              src="/static/projects/project_5/images/twitter.svg"
+              alt=""
+              class="rounded-full border-white border-2 p-2"
+            />
+            <img
+              src="/static/projects/project_5/images/instagram.svg"
+              alt=""
+              class="rounded-full border-white border-2 p-2"
+            />
           </div>
         </div>
       </div>
