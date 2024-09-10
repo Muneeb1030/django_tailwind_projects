@@ -1,9 +1,36 @@
-{% extends "base/base.html" %}
+{% load static tailwind_tags %} {% load static %}
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Bookmark Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    {% tailwind_css %}
+  </head>
+  <body>
+    <header>
+      
+    </header>
 
-{% block title %}Shortly{% endblock title %}
+    <footer>
+     
+    </footer>
+  </body>
 
-{% block content %}
-<div>
-    Project 3
-</div>
-{% endblock content %}
+  <script>
+    if (
+      localStorage.getItem("color-theme") === "dark" ||
+      (!("color-theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  </script>
+  <script src="/static/js/flyo.js" defer></script>
+</html>
